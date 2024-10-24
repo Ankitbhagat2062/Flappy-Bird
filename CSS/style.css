@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+ /* Style the play button */
+ #playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #770537;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#playButton:hover {
+  background-color: #b40e0e;
+  font-size: 40px;
+}
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform: translateY(-50%);
+  overflow: hidden; /* Hide overflowing content */
+}
+/* Style the canvas container */
+.canvas-container {
+  position: relative; /* Set relative positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Additional styles for the canvas */
+canvas {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; /* Center the canvas horizontally */
+  border: 10px outset #FFD700;
+  background-image: url('/Pictures/background.webp');
+  /* background-image: url('https://i.postimg.cc/H8DkdZNQ/background.webp'); */
+  background-size: cover;
+}
+
+/* Hide unnecessary images */
+#birdImg, #pipeImg, #bgImg {
+  display: none;
+}
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+/* Style the modal content */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(140, 66, 66);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 3;
+}
+
+/* Style the modal button */
+.modal-content button {
+  color: red;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+/* Hover effect for the modal button */
+.modal-content button:hover {
+  color: rgb(132, 44, 44);
+  font-size: 25px;
+  border: 4px solid black;
+  border-radius: 8px;
+  background-color: rgb(57, 148, 117);
+  cursor: pointer;
+}
+
+/* Additional styles for the form container */
+.level-container {
+  position: absolute; /* Position the form container absolutely */
+  top: 60px; /* Place it at the center vertically */
+  left: 50%; /* Place it at the center horizontally */
+  transform: translate(-50%, -50%); /* Center it precisely */
+  z-index: 1; /* Ensure it's above the canvas */
+}

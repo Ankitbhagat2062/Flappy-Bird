@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird - The Endless Flight</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <audio id="backgroundMusic" loop autoplay>
+    <source src="Audio/background_music_game.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <audio id="backgroundMusicstart" loop >
+    <source src="Audio/background_music_game.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="hoverMusic" loop>
+    <source src="Audio/hover_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="gameOverMusic" loop>
+    <source src="Audio/game_over_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="level-container">
+   <h1>Level 1</h1>
+  </div>
+
+  <div id="gameContainer" class="canvas-container" >
+    <canvas id="gameCanvas" width="1000" height="700"></canvas>
+    <audio id="collisionSound" src="Audio/collision_sound.mp3"></audio>
+    <audio id="floorCeilSound" src="Audio/floor_ceil_sound.mp3"></audio>
+    <audio id="pipeSound" src="Audio/pipe_sound.mp3"></audio>
+    <audio id="scoreSound" src="Audio/score_sound.mp3"></audio> <!-- Add the score sound -->
+
+    <img id="birdImg" src="Pictures/bird.png" alt="bird">
+    <img id="pipeImg" src="Pictures/pipes-png_388476.png" alt="pipe">
+    <img id="bgImg" src="Pictures/background.webp" alt="background">
+    <!-- <img id="birdImg" src="https://i.postimg.cc/N9t6F4Zw/pngwing-com-1.png" alt="bird">
+    <img id="pipeImg" src="https://i.postimg.cc/dkT0MP5s/Nice-Png-pipes-png-388476.png" alt="pipe">
+    <img id="bgImg" src="https://i.postimg.cc/H8DkdZNQ/background.webp" alt="background"> -->
+    <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <h2 id="gameOverMessage">Game Over!</h2>
+      <p id="scoreMessage"></p> 
+      <button id="retryButton">Retry</button>
+    </div>
+    </div>
+    <!-- Add the play button -->
+    <button id="playButton">Play</button>
+  </div>
+  <script src="JS/script.js"></script>
+  <script src="JS/windows.js"></script>
+  <script src="JS/music.js"></script>
+</body>
+
+</html>
