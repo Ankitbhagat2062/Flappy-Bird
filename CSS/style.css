@@ -51,8 +51,8 @@ canvas {
   height: 100%;
   margin: 0 auto; /* Center the canvas horizontally */
   border: 10px outset #FFD700;
-  background-image: url('/Pictures/background.webp');
-  /* background-image: url('https://i.postimg.cc/H8DkdZNQ/background.webp'); */
+/*   background-image: url('/Pictures/background.webp'); */
+  background-image: url('https://i.postimg.cc/H8DkdZNQ/background.webp');
   background-size: cover;
 }
 
