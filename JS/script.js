@@ -3,12 +3,12 @@ const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
 const birdImg = new Image();
-birdImg.src = "Pictures/bird.png";
-// birdImg.src = "https://i.postimg.cc/N9t6F4Zw/pngwing-com-1.png";
+// birdImg.src = "Pictures/bird.png";
+birdImg.src = "https://i.postimg.cc/N9t6F4Zw/pngwing-com-1.png";
 
 const pipeImg = new Image();
-pipeImg.src = "Pictures/pipes-png_388476.png";
-// pipeImg.src = "https://i.postimg.cc/dkT0MP5s/Nice-Png-pipes-png-388476.png";
+// pipeImg.src = "Pictures/pipes-png_388476.png";
+pipeImg.src = "https://i.postimg.cc/dkT0MP5s/Nice-Png-pipes-png-388476.png";
 
 function pausegameOverMusic() {
     const backgroundMusic = document.getElementById('backgroundMusic');
